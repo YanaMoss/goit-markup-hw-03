@@ -1,27 +1,38 @@
 /* Studio */
 /* Section Hero */
 .hero {
+  min-height: 600px;
   background-color: var(--dark-bcd-color--);
+  margin: 0;
+  margin-bottom: 94px;
+  text-align: center;
 }
 
 .hero-title {
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding-top: 200px;
+  justify-content: center;
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
-  text-align: center;
+  line-height: 1.36;
+  /* text-align: center; */
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color--);
 }
 
 .hero-button {
+  padding: 10px 32px;
   border: none;
   border-radius: 4px;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.87;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--white-color--);
@@ -29,33 +40,87 @@
 }
 
 /* Features */
+.features {
+  margin-bottom: 94px;
+}
+
 .features-title {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--titel-text-color--);
 }
 
 .features-text {
+  margin: 0;
+  padding: 0;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.features-item {
+  max-width: 270px;
+}
+
+.features-list > .features-item {
+  flex-basis: calc (100% / 4-30);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+/* .features-item {
+  margin-left: 30px;
+} */
+
 /* Product */
+.product {
+  margin-bottom: 94px;
+}
+
 .product-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--titel-text-color--);
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.product-list > .product-item {
+  flex-basis: calc(100% / 3-30px);
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.product-item {
+  margin: 0;
+  padding: 0;
 }
 
 /* Team */
@@ -64,29 +129,60 @@
 }
 
 .team-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+  padding-top: 94px;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--titel-text-color--);
 }
 
+.team-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 94px;
+}
+
+.team-part {
+  margin: 0;
+  padding: 0;
+  margin-right: 30px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background-color: var(--white-color--);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-part:last-child {
+  margin-right: 0;
+}
+
 .team-title.name {
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.187;
   text-align: center;
   letter-spacing: 0.03em;
 }
 
 .team-subtitle {
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  padding-bottom: 30px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.187px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color--);

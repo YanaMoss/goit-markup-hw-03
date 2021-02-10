@@ -19,17 +19,19 @@
   </head>
   <body>
     <!--Header-site-->
-    <header class="header conteiner">
+    <header class="header container">
       <nav class="nav">
         <a class="logo list" href="./index.html"
           ><span class="logo-part">Web</span>Studio</a
         >
-        <ul class="list">
+        <ul class="list nav-list">
           <li class="item-header">
-            <a class="list nav-link current" href="./index.html">Студия</a>
+            <a class="list nav-link" href="./index.html">Студия</a>
           </li>
           <li class="item-header">
-            <a class="list nav-link" href="./portfolio.html">Портфолио</a>
+            <a class="list nav-link current" href="./portfolio.html"
+              >Портфолио</a
+            >
           </li>
           <li class="item-header">
             <a class="list nav-link" href="">Контакты</a>
@@ -37,12 +39,12 @@
         </ul>
       </nav>
       <ul class="list">
-        <li>
+        <li class="item-header">
           <a class="list header-contacts" href="mailto:info@example.com"
             >info@example.com</a
           >
         </li>
-        <li>
+        <li class="item-header">
           <a class="list header-contacts" href="tel:+380991111111"
             >+38 099 111 11 11</a
           >
@@ -52,149 +54,160 @@
     <main>
       <section class="work">
         <!--<h1>Наши работы</h1>-->
-        <ul class="list">
-          <li><button class="work-filtres" type="button">Все</button></li>
-          <li><button class="work-filtres" type="button">Веб-сайты</button></li>
-          <li>
-            <button class="work-filtres" type="button">Приложения</button>
-          </li>
-          <li><button class="work-filtres" type="button">Дизайн</button></li>
-          <li>
-            <button class="work-filtres" type="button">Маркейтинг</button>
-          </li>
-        </ul>
-        <ul class="list work">
-          <li>
-            <a class="list" href="">
-              <img
-                src="./images/portfolio1.jpg"
-                alt="Изображение сайта"
-                width="370"
-                height="294"
-              />
-              <h2 class="work-title">Технокряк</h2>
-              <p class="work-subtitle">Веб-сайт</p>
-            </a>
-          </li>
-          <li>
-            <a class="list" href="">
-              <img
-                src="./images/portfolio2.jpg"
-                alt="Изображение постера"
-                width="370"
-                height="294"
-              />
-              <h2 class="work-title">Постер New Orlean vs Golden Star</h2>
-              <p class="work-subtitle">Дизайн</p>
-            </a>
-          </li>
-          <li>
-            <a class="list" href="">
-              <img
-                src="./images/portfolio3.jpg"
-                alt="Логотип ресторана"
-                width="370"
-                height="294"
-              />
-              <h2 class="work-title">Ресторан Seafood</h2>
-              <p class="work-subtitle">Приложение</p>
-            </a>
-          </li>
-          <li>
-            <a class="list" href="">
-              <img
-                src="./images/portfolio4.jpg"
-                alt="Изображение сайта"
-                width="370"
-                height="294"
-              />
-              <h2 class="work-title">Проект Prime</h2>
-              <p class="work-subtitle">Маркейтинг</p>
-            </a>
-          </li>
-          <li>
-            <a class="list" href="">
-              <img
-                src="./images/portfolio5.jpg"
-                alt="Изображение сайта"
-                width="370"
-                height="294"
-              />
-              <h2 class="work-title">Проект Boxes</h2>
-              <p class="work-subtitle">Приложение</p>
-            </a>
-          </li>
-          <li>
-            <a class="list" href="">
-              <img
-                src="./images/portfolio6.jpg"
-                alt="Изображение сайта"
-                width="370"
-                height="294"
-              />
-              <h2 class="work-title">Inspiration has no Borders</h2>
-              <p class="work-subtitle">Веб-сайт</p>
-            </a>
-          </li>
-          <li>
-            <a class="list" href="">
-              <img
-                src="./images/portfolio7.jpg"
-                alt="Изображение сайта"
-                width="370"
-                height="294"
-              />
-              <h2 class="work-title">Издание Limited Edition</h2>
-              <p class="work-subtitle">Дизайн</p>
-            </a>
-          </li>
-          <li>
-            <a class="list" href="">
-              <img
-                src="./images/portfolio8.jpg"
-                alt="Изображение сайта"
-                width="370"
-                height="294"
-              />
-              <h2 class="work-title">Проект LAB</h2>
-              <p class="work-subtitle">Маркейтинг</p>
-            </a>
-          </li>
-          <li>
-            <a class="list" href="">
-              <img
-                src="./images/portfolio9.jpg"
-                alt="Изображение сайта"
-                width="370"
-                height="294"
-              />
-              <h2 class="work-title">Growing Business</h2>
-              <p class="work-subtitle">Приложение</p>
-            </a>
-          </li>
-        </ul>
+        <div class="container">
+          <ul class="list filtres">
+            <li class="filtres-list">
+              <button class="work-filtres" type="button">Все</button>
+            </li>
+            <li class="filtres-list">
+              <button class="work-filtres" type="button">Веб-сайты</button>
+            </li>
+            <li class="filtres-list">
+              <button class="work-filtres" type="button">Приложения</button>
+            </li>
+            <li class="filtres-list">
+              <button class="work-filtres" type="button">Дизайн</button>
+            </li>
+            <li class="filtres-list">
+              <button class="work-filtres" type="button">Маркейтинг</button>
+            </li>
+          </ul>
+          <!-- works-list -->
+          <ul class="list works">
+            <li class="works-list">
+              <a class="list" href="">
+                <img
+                  src="./images/portfolio1.jpg"
+                  alt="Изображение сайта"
+                  width="370"
+                  height="294"
+                />
+                <h2 class="work-title">Технокряк</h2>
+                <p class="work-subtitle">Веб-сайт</p>
+              </a>
+            </li>
+            <li class="works-list">
+              <a class="list" href="">
+                <img
+                  src="./images/portfolio2.jpg"
+                  alt="Изображение постера"
+                  width="370"
+                  height="294"
+                />
+                <h2 class="work-title">Постер New Orlean vs Golden Star</h2>
+                <p class="work-subtitle">Дизайн</p>
+              </a>
+            </li>
+            <li class="works-list">
+              <a class="list" href="">
+                <img
+                  src="./images/portfolio3.jpg"
+                  alt="Логотип ресторана"
+                  width="370"
+                  height="294"
+                />
+                <h2 class="work-title">Ресторан Seafood</h2>
+                <p class="work-subtitle">Приложение</p>
+              </a>
+            </li>
+            <li class="works-list">
+              <a class="list" href="">
+                <img
+                  src="./images/portfolio4.jpg"
+                  alt="Изображение сайта"
+                  width="370"
+                  height="294"
+                />
+                <h2 class="work-title">Проект Prime</h2>
+                <p class="work-subtitle">Маркейтинг</p>
+              </a>
+            </li>
+            <li class="works-list">
+              <a class="list" href="">
+                <img
+                  src="./images/portfolio5.jpg"
+                  alt="Изображение сайта"
+                  width="370"
+                  height="294"
+                />
+                <h2 class="work-title">Проект Boxes</h2>
+                <p class="work-subtitle">Приложение</p>
+              </a>
+            </li>
+            <li class="works-list">
+              <a class="list" href="">
+                <img
+                  src="./images/portfolio6.jpg"
+                  alt="Изображение сайта"
+                  width="370"
+                  height="294"
+                />
+                <h2 class="work-title">Inspiration has no Borders</h2>
+                <p class="work-subtitle">Веб-сайт</p>
+              </a>
+            </li>
+            <li class="works-list">
+              <a class="list" href="">
+                <img
+                  src="./images/portfolio7.jpg"
+                  alt="Изображение сайта"
+                  width="370"
+                  height="294"
+                />
+                <h2 class="work-title">Издание Limited Edition</h2>
+                <p class="work-subtitle">Дизайн</p>
+              </a>
+            </li>
+            <li class="works-list">
+              <a class="list" href="">
+                <img
+                  src="./images/portfolio8.jpg"
+                  alt="Изображение сайта"
+                  width="370"
+                  height="294"
+                />
+                <h2 class="work-title">Проект LAB</h2>
+                <p class="work-subtitle">Маркейтинг</p>
+              </a>
+            </li>
+            <li class="works-list">
+              <a class="list" href="">
+                <img
+                  src="./images/portfolio9.jpg"
+                  alt="Изображение сайта"
+                  width="370"
+                  height="294"
+                />
+                <h2 class="work-title">Growing Business</h2>
+                <p class="work-subtitle">Приложение</p>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!--Footer-->
     <footer class="footer">
-      <a class="footer-logo" href="./index.html"
-        ><span class="logo-part">Web</span>Studio</a
-      >
-      <address class="footer">
-        <p>г. Киев, пр-т Леси Украинки, 26</p>
-        <ul>
-          <li>
-            <a class="footer-contacts" href="mailto:info@example.com"
-              >info@example.com</a
-            >
-          </li>
-          <li>
-            <a class="footer-contacts" href="tel:+380991111111"
-              >+38 099 111 11 11</a
-            >
-          </li>
-        </ul>
-      </address>
+      <div class="container">
+        <a class="list footer-logo" href="./index.html"
+          ><span class="logo-part">Web</span>Studio</a
+        >
+        <address class="footer-address">
+          <p>г. Киев, пр-т Леси Украинки, 26</p>
+          <ul class="list footer-contacts">
+            <li class="contacts-list">
+              <a class="list footer-contacts" href="mailto:info@example.com"
+                >info@example.com</a
+              >
+            </li>
+            <li class="contacts-list">
+              <a class="list footer-contacts" href="tel:+380991111111"
+                >+38 099 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
