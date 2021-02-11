@@ -127,7 +127,7 @@
 
 .team-part {
   margin-right: 30px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   background-color: var(--white-color--);
   border-radius: 0px 0px 4px 4px;
 }
@@ -137,6 +137,8 @@
 }
 
 .team-title.name {
+  margin: 0;
+  padding: 0;
   margin-top: 30px;
   font-style: normal;
   font-weight: 500;
@@ -147,12 +149,14 @@
 }
 
 .team-subtitle {
+  margin: 0;
+  padding: 0;
   margin-top: 10px;
   padding-bottom: 30px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 1.187px;
+  line-height: 1.187;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color--);
