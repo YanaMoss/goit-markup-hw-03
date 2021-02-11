@@ -3,16 +3,11 @@
 .hero {
   min-height: 600px;
   background-color: var(--dark-bcd-color--);
-  margin: 0;
-  padding: 0;
   margin-bottom: 94px;
   text-align: center;
 }
 
 .hero-title {
-  margin: 0;
-  padding: 0;
-  margin-top: 0;
   margin-bottom: 30px;
   padding-top: 200px;
   justify-content: center;
@@ -20,7 +15,6 @@
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  /* text-align: center; */
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color--);
@@ -48,9 +42,7 @@
 }
 
 .features-title {
-  margin: 0;
   margin-bottom: 10px;
-  padding: 0;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -61,8 +53,6 @@
 }
 
 .features-text {
-  margin: 0;
-  padding: 0;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -71,11 +61,11 @@
 }
 
 .features-list {
-  display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
+
 .features-item {
   max-width: 270px;
 }
@@ -86,18 +76,12 @@
   margin-top: 30px;
 }
 
-/* .features-item {
-  margin-left: 30px;
-} */
-
 /* Product */
 .product {
   margin-bottom: 94px;
 }
 
 .product-title {
-  margin: 0;
-  padding: 0;
   margin-bottom: 50px;
   font-style: normal;
   font-weight: bold;
@@ -109,7 +93,6 @@
 }
 
 .product-list {
-  display: flex;
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
@@ -121,19 +104,12 @@
   margin-left: 30px;
 }
 
-.product-item {
-  margin: 0;
-  padding: 0;
-}
-
 /* Team */
 .team {
   background-color: var(--secondary-bcd-color--);
 }
 
 .team-title {
-  margin: 0;
-  padding: 0;
   margin-bottom: 50px;
   padding-top: 94px;
   font-style: normal;
@@ -146,15 +122,10 @@
 }
 
 .team-list {
-  display: flex;
-  margin: 0;
-  padding: 0;
   padding-bottom: 94px;
 }
 
 .team-part {
-  margin: 0;
-  padding: 0;
   margin-right: 30px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   background-color: var(--white-color--);
@@ -166,8 +137,6 @@
 }
 
 .team-title.name {
-  margin: 0;
-  padding: 0;
   margin-top: 30px;
   font-style: normal;
   font-weight: 500;
@@ -178,8 +147,6 @@
 }
 
 .team-subtitle {
-  margin: 0;
-  padding: 0;
   margin-top: 10px;
   padding-bottom: 30px;
   font-style: normal;

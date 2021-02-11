@@ -16,6 +16,10 @@ html {
 *::after {
   box-sizing: inherit;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   background-color: var(--white-color--);
@@ -27,22 +31,30 @@ body {
   list-style: none;
   text-decoration: none;
   padding-left: 0;
-  margin: 0;
-  padding: 0;
 }
 
 .container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-
   padding-left: 15px;
   padding-right: 15px;
 }
 
+.header,
+.nav,
+.nav-list,
+.header-contacts,
+.features-list,
+.product-list,
+.team-list,
+.filtres,
+.works {
+  display: flex;
+}
+
 /* Header site */
 .header {
-  display: flex;
   min-height: 80px;
   justify-content: space-between;
   align-items: center;
@@ -63,19 +75,13 @@ body {
   color: var(--accent-color--);
 }
 .nav {
-  display: flex;
   align-items: center;
 }
 
-.nav-list {
-  display: flex;
-}
-.item-header {
+.item-header:not(:last-child) {
   margin-right: 50px;
 }
-.item-header:last-child {
-  margin-right: 0;
-}
+
 .nav-link {
   font-style: normal;
   font-weight: 500;
@@ -94,10 +100,6 @@ body {
   color: var(--accent-color--);
 }
 
-.header-contacts {
-  display: flex;
-}
-
 .contacts-link {
   font-style: normal;
   font-weight: 500;
@@ -114,8 +116,6 @@ body {
 
 /* footer */
 .footer {
-  margin: 0;
-  padding: 0;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -127,8 +127,6 @@ body {
 
 .footer-logo {
   display: block;
-  margin: 0;
-  padding: 0;
   padding-top: 60px;
   margin-bottom: 20px;
   font-family: "Raleway", sans-serif;
@@ -142,8 +140,6 @@ body {
 
 .footer-address {
   font-style: normal;
-  margin: 0;
-  padding: 0;
   padding-bottom: 60px;
 }
 
@@ -152,11 +148,5 @@ body {
 }
 
 .contacts-list {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 9px;
-}
-
-.contacts-list:last-child {
-  margin-bottom: 0;
+  margin-top: 9px;
 }

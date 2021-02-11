@@ -1,17 +1,12 @@
 /* Portfolio */
 
 .filtres {
-  display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.filtres-list {
+.filtres-list:not(:last-child) {
   margin-right: 8px;
-}
-
-.filtres-list:last-child {
-  margin: 0;
 }
 
 .work {
@@ -19,13 +14,9 @@
 }
 
 .work-filtres {
-  padding-left: 22px;
-  padding-top: 6px;
-  padding-right: 22px;
-  padding-bottom: 6px;
+  padding: 6px 22px;
   border: none;
   border-radius: 4px;
-
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -34,9 +25,6 @@
   letter-spacing: 0.03em;
   color: var(--titel-text-color--);
   background-color: var(--secondary-bcd-color--);
-}
-.work-filtres::-moz-focus-inner {
-  border: 0;
 }
 
 .work-filtres:hover,
@@ -49,10 +37,7 @@
 }
 
 .works {
-  display: flex;
   flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
   margin-left: -30px;
   margin-top: -30px;
 }
@@ -63,13 +48,7 @@
   margin-top: 30px;
 }
 
-/* .works-list {
-  margin-left: 30px;
-} */
-
 .work-title {
-  margin: 0;
-  padding: 0;
   margin-top: 20px;
   font-style: normal;
   font-weight: bold;
@@ -80,8 +59,6 @@
 }
 
 .work-subtitle {
-  margin: 0;
-  padding: 0;
   margin-top: 4px;
   font-style: normal;
   font-weight: normal;
