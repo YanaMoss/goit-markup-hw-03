@@ -19,8 +19,13 @@
 }
 
 .work-filtres {
+  padding-left: 22px;
+  padding-top: 6px;
+  padding-right: 22px;
+  padding-bottom: 6px;
   border: none;
   border-radius: 4px;
+
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -30,12 +35,17 @@
   color: var(--titel-text-color--);
   background-color: var(--secondary-bcd-color--);
 }
+.work-filtres::-moz-focus-inner {
+  border: 0;
+}
 
 .work-filtres:hover,
 .work-filtres:focus,
 .work-filtres:active {
   color: var(--white-color--);
   background-color: var(--accent-color--);
+  outline: none;
+  filter: drop-shadow(2px 0px 2px rgba(0, 0, 0, 0.12));
 }
 
 .works {

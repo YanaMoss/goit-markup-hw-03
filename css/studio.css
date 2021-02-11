@@ -4,6 +4,7 @@
   min-height: 600px;
   background-color: var(--dark-bcd-color--);
   margin: 0;
+  padding: 0;
   margin-bottom: 94px;
   text-align: center;
 }
@@ -37,6 +38,8 @@
   letter-spacing: 0.06em;
   color: var(--white-color--);
   background-color: var(--accent-color--);
+  outline: none;
+  filter: drop-shadow(4px 0px 4px rgba(0, 0, 0, 0.15));
 }
 
 /* Features */
