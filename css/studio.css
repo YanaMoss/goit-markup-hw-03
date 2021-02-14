@@ -1,15 +1,17 @@
 /* Studio */
 /* Section Hero */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   min-height: 600px;
   background-color: var(--dark-bcd-color--);
-  margin-bottom: 94px;
   text-align: center;
 }
 
 .hero-title {
+  margin: 0;
+  padding: 0;
   margin-bottom: 30px;
-  padding-top: 200px;
   justify-content: center;
   font-style: normal;
   font-weight: 900;
@@ -38,7 +40,8 @@
 
 /* Features */
 .features {
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .features-title {
@@ -78,10 +81,11 @@
 
 /* Product */
 .product {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .product-title {
+  margin: 0;
   margin-bottom: 50px;
   font-style: normal;
   font-weight: bold;
@@ -106,12 +110,14 @@
 
 /* Team */
 .team {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: var(--secondary-bcd-color--);
 }
 
 .team-title {
+  margin: 0;
   margin-bottom: 50px;
-  padding-top: 94px;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -119,10 +125,6 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--titel-text-color--);
-}
-
-.team-list {
-  padding-bottom: 94px;
 }
 
 .team-part {
